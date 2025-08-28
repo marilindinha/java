@@ -77,6 +77,53 @@ public class Lista6 {
 			}
 			System.out.println("------------------------------------");
 			
+			//7 - Bônus de funcionário
+			System.out.print("Digite a quantidade de horas extras: ");
+			double hrextra = scanner.nextDouble();
+			System.out.print("Digite o número de faltas: ");
+			double faltas = scanner.nextDouble();
+			if (hrextra > 20 && faltas < 5) {
+			System.out.println("Voce ganhou Bonús!");
+			} else {
+			System.out.println("Desculpe, você não ganhou bonús");
+			}
+			System.out.println("------------------------------------");
+			
+			//8 - Autorização para dirigir
+			System.out.print("Digite sua idade: ");
+			int idade2 = scanner.nextInt();
+			System.out.print("Possuí Habilitação? (true/false): ");
+			boolean doc = scanner.nextBoolean();
+			if (idade2 > 18 && doc ) {
+			System.out.println("Pode dirigir!");
+			} else {
+			System.out.println("Não pode dirigir.");
+			}
+			System.out.println("------------------------------------");
+			
+			//9 - Elegibilidade para Bolsa de Estudos
+			System.out.print("Digite sua nota média (0 a 10): ");
+	        double notaMedia = scanner.nextDouble();
+	        System.out.print("Digite sua frequência (0 a 100): ");
+	        int frequencia = scanner.nextInt();
+	        if (notaMedia >= 8 && frequencia >= 80) {
+	            System.out.println("Bolsa concedida");
+	        } else {
+	            System.out.println("Bolsa não concedida");
+	        }
+	        System.out.println("------------------------------------");
+	        
+	        //10 - Verificação de Temperatura Ambiente
+	        System.out.print("Digite a temperatura ambiente (°C): ");
+	        temp = scanner.nextDouble();
+	        System.out.print("Digite a umidade (%): ");
+	        int umidade = scanner.nextInt();
+	        if ((temp < 18 || temp > 26) && umidade > 60) {
+	            System.out.println("Ajustar climatização");
+	        } else {
+	            System.out.println("Climatização não necessária");
+	        }
+			
 			      
 		}
 
