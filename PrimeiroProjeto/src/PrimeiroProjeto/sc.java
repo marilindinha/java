@@ -1,13 +1,9 @@
 package PrimeiroProjeto;
 
-public class switchCase {
+public class sc {
 
 	public static void main(String[] args) {
-		int opcao = 2;
-		
-		switch(opcao) {
-		
-		}
+		// TODO Auto-generated method stub
 
 	}
 
