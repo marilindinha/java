@@ -3,19 +3,19 @@ package PrimeiroProjeto;
 public class Lista19 {
 
     // 1 – Classificando valores
-    public static void classificarValor(int numero) {
-        if (numero > 0) {
-            System.out.println(numero + " é Positivo");
-        } else if (numero < 0) {
-            System.out.println(numero + " é Negativo");
+    public static void valor(int n) {
+        if (n > 0) {
+            System.out.println(n + " é Positivo");
+        } else if (n < 0) {
+            System.out.println(n + " é Negativo");
         } else {
-            System.out.println(numero + " é Zero");
+            System.out.println(n + " é Zero");
         }
     }
 
     // 2 – Maioridade
-    public static void verificarMaioridade(int idade) {
-        if (idade >= 18) {
+    public static void idade(int i) {
+        if (i >= 18) {
             System.out.println("Maior de idade");
         } else {
             System.out.println("Menor de idade");
@@ -23,36 +23,36 @@ public class Lista19 {
     }
 
     // 3 – Boas Vindas
-    public static void boasVindas(String nome) {
+    public static void boas(String nome) {
         System.out.println("Bem-vindo(a), " + nome + "!");
     }
 
     // 4 – Tabuada
-    public static void tabuada(int numero) {
+    public static void tab(int n) {
         for (int i = 1; i <= 10; i++) {
-            System.out.println(numero + " x " + i + " = " + (numero * i));
+            System.out.println(n + " x " + i + " = " + (n * i));
         }
     }
 
     // 5 – Juntando palavras
-    public static void juntarPalavras(String palavra1, String palavra2) {
-        System.out.println(palavra1 + palavra2);
+    public static void juntar(String p1, String p2) {
+        System.out.println(p1 + p2);
     }
 
     // 6 – Verificando par ou ímpar
-    public static void parOuImpar(int numero) {
-        if (numero % 2 == 0) {
-            System.out.println(numero + " é Par");
+    public static void parImpar(int n) {
+        if (n % 2 == 0) {
+            System.out.println(n + " é Par");
         } else {
-            System.out.println(numero + " é Ímpar");
+            System.out.println(n + " é Ímpar");
         }
     }
 
     // 7 – Classificando temperatura
-    public static void classificarTemperatura(double temp) {
-        if (temp < 15) {
+    public static void temp(double t) {
+        if (t < 15) {
             System.out.println("Frio");
-        } else if (temp <= 25) {
+        } else if (t <= 25) {
             System.out.println("Agradável");
         } else {
             System.out.println("Quente");
@@ -60,8 +60,8 @@ public class Lista19 {
     }
 
     // 8 – Saudação por turno
-    public static void saudacaoPorTurno(String turno) {
-        switch (turno.toLowerCase()) {
+    public static void turno(String t) {
+        switch (t.toLowerCase()) {
             case "manhã":
                 System.out.println("Bom dia!");
                 break;
@@ -77,16 +77,16 @@ public class Lista19 {
     }
 
     // 9 – Calculando média
-    public static void calcularMedia(double n1, double n2, double n3) {
-        double media = (n1 + n2 + n3) / 3.0;
-        System.out.println("Média: " + media);
+    public static void media(double n1, double n2, double n3) {
+        double m = (n1 + n2 + n3) / 3.0;
+        System.out.println("Média: " + m);
     }
 
     // 10 – Verificando aprovação
-    public static void verificarAprovacao(double notaFinal) {
-        if (notaFinal >= 7) {
+    public static void nota(double n) {
+        if (n >= 7) {
             System.out.println("Aprovado");
-        } else if (notaFinal >= 5) {
+        } else if (n >= 5) {
             System.out.println("Em recuperação");
         } else {
             System.out.println("Reprovado");
@@ -94,35 +94,34 @@ public class Lista19 {
     }
 
     public static void main(String[] args) {
-        // Testando todas as funções
-        classificarValor(10);
-        classificarValor(-3);
-        classificarValor(0);
+        valor(10);
+        valor(-3);
+        valor(0);
 
-        verificarMaioridade(16);
-        verificarMaioridade(20);
+        idade(16);
+        idade(20);
 
-        boasVindas("Mariana");
+        boas("Mari");
 
-        tabuada(7);
+        tab(7);
 
-        juntarPalavras("Java", "Rocks");
+        juntar("Java", "Top");
 
-        parOuImpar(9);
-        parOuImpar(12);
+        parImpar(9);
+        parImpar(12);
 
-        classificarTemperatura(10);
-        classificarTemperatura(20);
-        classificarTemperatura(30);
+        temp(10);
+        temp(20);
+        temp(30);
 
-        saudacaoPorTurno("manhã");
-        saudacaoPorTurno("tarde");
-        saudacaoPorTurno("noite");
+        turno("manhã");
+        turno("tarde");
+        turno("noite");
 
-        calcularMedia(8.5, 7.0, 6.0);
+        media(8, 7, 6);
 
-        verificarAprovacao(8.0);
-        verificarAprovacao(6.5);
-        verificarAprovacao(4.0);
+        nota(8);
+        nota(6);
+        nota(4);
     }
 }
